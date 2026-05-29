@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif; 
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 20px 10%; 
+    background-color: #000;
+    border-bottom: 1px solid #f0f0f0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.logo {
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: #fff;
+}
+
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 50px; 
+}
+
+.menu a {
+    text-decoration: none;
+    color: #bdb8b8;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+
+.menu a:hover {
+    color: #fff;   
+}
+
+.menu a::after{
+    content: '';
+    height: 2px;
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.menu a:hover::after {
+    opacity:1;
+}
+
+
+.loginpage a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    background: white;
+    border: 1px solid white;
+    padding: 9px 25px;
+    line-height: 1.4;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: .4s;
+}
+
+.loginpage a:hover {
+        transform: scale(1.2);
+    border: 1px solid #615f5a;
+    background: transparent;
+    color: white;
+} 
+
+
+.footer {
+    background-color: #000;
+    color: #ffffff;
+    padding: 60px 10% 20px 10%;
+    font-size: 14px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+}
+
+
+.footer-column h3 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.footer-logo {
+    font-size: 32px;
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.footer-column a {
+    color: #bbbbbb;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column a:hover {
+    color: #ffffff;
+}
+
+
+.footer-column .social-icons {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+
+.footer-bottom {
+    border-top: 1px solid #222;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    color: #888;
+}
+
+.footer-bottom a {
+    color: #888;
+}

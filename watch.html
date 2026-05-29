@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cedar - Wood Watch</title>
+    <link rel="stylesheet" href="../pages/style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+ 
+       <nav class ="navbar">
+            <div class="logo">trendzy</div>
+            <ul class="menu">
+                <li><a href="../pages/index.html">Home</a></li>
+                <li><a href="../pages/products.html">Shop</a></li>
+                <li><a href="../pages/blog.html">Blog</a></li>
+                <li><a href="../pages/about.html">About Us</a></li> 
+            </ul>
+            <div class="researchpage"><a href="../pages/Research.html">Research</a></div>
+        </nav>
+    <figure class="comb-container">    
+        <h3 class="comb-title"><a href="../pages/products.html"class="producttitle">Shop</a></h3>
+        <h3 class="comb-title2"> -<br>The Cedar - Wood Watch    </h3>
+    <img src="../imagess/watch1.png" alt="watch" style="width:500px;height:500px;transform: scale(1) !important;"class="comb">
+    <figcaption class="watch-caption">The Cedar - Wood Watch</figcaption>
+    <figcaption class="description">Description:<br>
+    </figcaption>
+    <section>
+        <p class="aboutitem">
+     Made from recycled materials, these watch is designed to be both <br>eco-friendly and stylish. Recyclable packaging, sustainable for the environment.</p>
+    </section>
+    <figcaption class="description2">Price:<br></figcaption>
+     <h3 class="productprice">NPR. 3,200</h3>
+     <button class = "cart" onclick="openPopup()">Add to Cart</button>
+     <figcaption class="materials">Product Details:
+     </figcaption>
+     <p class="consistof">
+
+Type: Automatic Watch<br>
+Materials: Wood, Recycled Metal<br>
+Color: Brown<br>
+Recyclable: Yes
+        </p>
+    </figure>
+     <div class="popup" id="popup">
+        <img src="../imagess/tick.gif" alt="check" class="check-img">
+            <h2>Item added to cart!</h2>
+            <button class="close-btn" onclick="closePopup()">X</button>
+        </div>
+         <script>
+    let popup=document.getElementById("popup");
+
+function openPopup(){
+    popup.classList.add("open-popup");
+}
+function closePopup(){
+    popup.classList.remove("open-popup");
+}
+    
+    </script>
+   
+    
+    <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <h2 class="footer-logo">trendzy</h2>
+            <p>Trendzy Pvt. Ltd.</p>
+            <p>Kamal Marga</p>
+            <p>Kamal Pokhari, Kathmandu</p>
+        </div>
+
+        <div class="footer-column">
+            <h3>Get to know us!</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Our Team</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Connect with Us</h3>
+            <div class="social-icons">
+                <a href="#" style="text-decoration:none"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" style="text-decoration:none"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" style="text-decoration:none"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <h3>For any Help Call us at</h3>
+            <p class="phone">+977 9767574737</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+      
+        <p>&copy; 2026 trendzy</p>
+    </div></body>
+     
+</html>

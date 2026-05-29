@@ -1,0 +1,40 @@
+body {
+    background: #000;
+    color: #fff;
+}
+
+.profile-section {
+    padding: 80px 10%;
+}
+
+.profile-container {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.profile-image img {
+    width: 320px;
+    border-radius: 20px;
+}
+
+.profile-details h1 {
+    font-size: 36px;
+}
+
+.profile-details h3 {
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.profile-details p {
+    color: #ccc;
+}
+
+.feedback-section {
+    background: #111;
+    padding: 80px 10%;
+    text-align: center;
+}
+
+
